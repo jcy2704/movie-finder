@@ -1,6 +1,6 @@
-import '../styles/app/App.css';
+import '../styles/main/Main.css';
 
-function App() {
+const Main = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -10,4 +10,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
