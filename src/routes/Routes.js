@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Main from '../components/Main';
+import Trending from '../containers/Trending';
 // import Navigation from '../components/Navigation';
 
 const Routes = () => (
   <BrowserRouter>
-    <Main />
+    {/* <Trending /> */}
     {/* <Navigation /> */}
     <Switch>
-      <Route path="/" component={Main} />
+      <Route path="/" component={Trending} />
     </Switch>
   </BrowserRouter>
 );
