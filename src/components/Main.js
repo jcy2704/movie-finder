@@ -1,5 +1,5 @@
 import '../styles/main/Main.css';
-import { topTrending } from '../helpers/api/api';
+import { topTrending } from '../helpers/api_methods/api';
 
 const Main = () => (
   <>
