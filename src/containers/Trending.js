@@ -1,22 +1,24 @@
+/* eslint-disable max-len */
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import '../styles/main/Main.css';
 import { topTrending } from '../helpers/api_methods/api';
 import { loadTrending } from '../actions';
+import BigHero from '../components/BigHero';
 
 const Trending = ({ movie, loader }) => {
   useEffect(() => {
     topTrending(loader);
   }, [loader]);
 
+  const {
+    title, backdrop_path: backDrop, poster_path: poster, vote_average: rating, overview,
+  } = movie;
+
   return (
     <>
-      <div className="App">
-        <header className="App-header">
-          {movie.title}
-        </header>
-      </div>
+      <BigHero title={title} backDrop={backDrop} poster={poster} rating={rating} description={overview} />
     </>
   );
 };

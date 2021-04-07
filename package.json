@@ -67,7 +67,8 @@
       "TOP_RATED",
       "UPCOMING",
       "API_KEY",
-      "IMG_URL"
+      "IMG_URL",
+      "POSTER_URL"
     ]
   }
 }

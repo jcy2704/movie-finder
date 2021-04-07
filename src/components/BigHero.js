@@ -8,7 +8,7 @@ const BigHero = ({
   <div>
     <img src={`${env.IMG_URL}${backDrop}`} alt="BackDrop" />
     <div>
-      <img src={`${env.IMG_URL}${poster}`} alt="Poster" />
+      <img src={`${env.POSTER_URL}${poster}`} alt="Poster" />
       <div>
         <h1>{title}</h1>
         <p>{genres}</p>
