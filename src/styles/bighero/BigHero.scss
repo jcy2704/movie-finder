@@ -81,11 +81,11 @@
 .trailer-cont {
   background-color: $yellow;
   font-size: 1.25em;
-  font-weight: 500;
   color: $black;
   border-radius: 10px;
 
   .trailer {
+    font-weight: 500;
     padding: 12px 25px;
     cursor: pointer;
 

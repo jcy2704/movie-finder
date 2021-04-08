@@ -141,12 +141,12 @@ button {
 .trailer-cont {
   background-color: #ebb52a;
   font-size: 1.25em;
-  font-weight: 500;
   color: #222;
   border-radius: 10px;
 }
 
 .trailer-cont .trailer {
+  font-weight: 500;
   padding: 12px 25px;
   cursor: pointer;
 }

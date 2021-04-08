@@ -27,3 +27,19 @@ export const PopularMovies = (loader, setLoading) => {
       setLoading(false);
     });
 };
+
+export const TopRatedMovies = (loader, setLoading) => {
+  axios.get(`${env.TOP_RATED}?api_key=${env.API_KEY}`)
+    .then(response => {
+      loader(response.data.results);
+      setLoading(false);
+    });
+};
+
+export const UpcomingMovies = (loader, setLoading) => {
+  axios.get(`${env.UPCOMING}?api_key=${env.API_KEY}`)
+    .then(response => {
+      loader(response.data.results);
+      setLoading(false);
+    });
+};

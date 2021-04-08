@@ -1,5 +1,5 @@
 import {
-  GET_UPCOMING, GET_POPULAR, GET_PLAYING_NOW, GET_TOP_RATED,
+  GET_UPCOMING, GET_POPULAR, GET_TOP_RATED,
 } from '../actions';
 
 const moviesReducer = (state = [], action) => {
@@ -9,8 +9,6 @@ const moviesReducer = (state = [], action) => {
     case GET_TOP_RATED:
       return action.movies;
     case GET_UPCOMING:
-      return action.movies;
-    case GET_PLAYING_NOW:
       return action.movies;
     default:
       return state;
