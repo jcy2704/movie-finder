@@ -37,7 +37,7 @@
 }
 
 .info {
-  padding: 30px;
+  padding: 0 30px;
   padding-right: 0;
 
   .title {
@@ -47,7 +47,7 @@
 
   .desc {
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     font-size: 1.5em;
   }
 }
@@ -69,6 +69,13 @@
         color: $yellow;
       }
     }
+  }
+
+  button {
+    @extend p;
+    padding: 0;
+    background-color: transparent;
+    border: none;
   }
 }
 

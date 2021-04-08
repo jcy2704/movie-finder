@@ -7,6 +7,7 @@ import { topTrending } from '../helpers/api_methods/api';
 import { loadTrending, loadVideos } from '../actions';
 import BigHero from '../components/BigHero';
 import GenreList from '../helpers/genres/genre';
+import Loading from '../components/Loading';
 
 const Trending = ({ movie, loader, trailer }) => {
   const [isLoading, setLoading] = useState(true);
@@ -20,7 +21,7 @@ const Trending = ({ movie, loader, trailer }) => {
   } = movie;
 
   if (isLoading) {
-    return <div />;
+    return <Loading nothing />;
   }
 
   return (

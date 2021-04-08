@@ -20,7 +20,13 @@ const BigHero = ({
         <h1 className="title">{title}</h1>
 
         <div className="d-flex genres">
-          {genres.map(genre => <p key={genre}>{genre}</p>)}
+          {genres.map(genre => (
+            <p key={genre}>
+              <button type="button" onClick={() => console.log('er')} name={genre}>
+                {genre}
+              </button>
+            </p>
+          ))}
           <p className="rating">
             <FontAwesomeIcon className="rating-star" icon={faStar} />
             {rating}
