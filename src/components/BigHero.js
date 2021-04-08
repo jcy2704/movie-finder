@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import env from 'react-dotenv';
 import '../styles/bighero/BigHero.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faPlay } from '@fortawesome/free-solid-svg-icons';
@@ -10,11 +9,11 @@ const BigHero = ({
 }) => (
   <div className={`position-relative hero ${home ? 'home-screen' : ''}`}>
     <div className="hero-img">
-      <img className="w-100 backdrop" src={`${env.IMG_URL}${backDrop}`} alt="BackDrop" />
+      <img className="w-100 backdrop" src={`${process.env.REACT_APP_IMG_URL}${backDrop}`} alt="BackDrop" />
     </div>
 
     <div className="position-absolute info-cont d-flex">
-      <img src={`${env.POSTER_URL}${poster}`} alt="Poster" />
+      <img src={`${process.env.REACT_APP_POSTER_URL}${poster}`} alt="Poster" />
 
       <div className="w-75 text-justify info">
         <h1 className="title">{title}</h1>

@@ -4,11 +4,12 @@ import Trending from '../containers/Trending';
 import Popular from '../containers/Popular';
 import TopRated from '../containers/TopRated';
 import Upcoming from '../containers/Upcoming';
+import Navigation from '../components/Navigation';
 
 const Routes = () => (
   <BrowserRouter>
     <Trending />
-    {/* <Navigation /> */}
+    <Navigation />
     <Switch>
       <Route path="/" component={Popular} exact />
       <Route path="/top" component={TopRated} />

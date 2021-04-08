@@ -1,9 +1,9 @@
+/* eslint-disable max-len */
 import axios from 'axios';
-import env from 'react-dotenv';
 import randInt from '../randInt';
 
 const Videos = (id, loader, setLoading) => {
-  axios.get(`${env.DETAILS}/${id}/videos?api_key=${env.API_KEY}`)
+  axios.get(`${process.env.REACT_APP_DETAILS}/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       const [vid] = response.data.results.filter(obj => obj.site === 'YouTube' && obj.type === 'Trailer');
       loader(vid);
@@ -12,7 +12,7 @@ const Videos = (id, loader, setLoading) => {
 };
 
 export const topTrending = (loader, setLoading, trailer) => {
-  axios.get(`${env.TRENDING}?api_key=${env.API_KEY}`)
+  axios.get(`${process.env.REACT_APP_TRENDING}?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       const movie = randInt(0, 10);
       loader(response.data.results[movie]);
@@ -21,29 +21,37 @@ export const topTrending = (loader, setLoading, trailer) => {
 };
 
 export const PopularMovies = (loader, setLoading) => {
-  axios.get(`${env.POPULAR}?api_key=${env.API_KEY}`)
+  axios.get(`${process.env.REACT_APP_POPULAR}?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       loader(response.data.results);
-      axios.get(`${env.POPULAR}?api_key=${env.API_KEY}&page=2`)
-        .then(response => loader(response.data.results));
-      axios.get(`${env.POPULAR}?api_key=${env.API_KEY}&page=3`)
-        .then(response => loader(response.data.results));
+      // axios.get(`${process.env.REACT_APP_POPULAR}?api_key=${process.env.REACT_APP_API_KEY}&page=2`)
+      //   .then(response => loader(response.data.results));
+      // axios.get(`${process.env.REACT_APP_POPULAR}?api_key=${process.env.REACT_APP_API_KEY}&page=3`)
+      //   .then(response => loader(response.data.results));
       setLoading(false);
     });
 };
 
 export const TopRatedMovies = (loader, setLoading) => {
-  axios.get(`${env.TOP_RATED}?api_key=${env.API_KEY}`)
+  axios.get(`${process.env.REACT_APP_TOP_RATED}?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       loader(response.data.results);
+      // axios.get(`${process.env.REACT_APP_TOP_RATED}?api_key=${process.env.REACT_APP_API_KEY}&page=2`)
+      //   .then(response => loader(response.data.results));
+      // axios.get(`${process.env.REACT_APP_TOP_RATED}?api_key=${process.env.REACT_APP_API_KEY}&page=3`)
+      //   .then(response => loader(response.data.results));
       setLoading(false);
     });
 };
 
 export const UpcomingMovies = (loader, setLoading) => {
-  axios.get(`${env.UPCOMING}?api_key=${env.API_KEY}`)
+  axios.get(`${process.env.REACT_APP_UPCOMING}?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       loader(response.data.results);
+      // axios.get(`${process.env.REACT_APP_UPCOMING}?api_key=${process.env.REACT_APP_API_KEY}&page=2`)
+      //   .then(response => loader(response.data.results));
+      // axios.get(`${process.env.REACT_APP_UPCOMING}?api_key=${process.env.REACT_APP_API_KEY}&page=3`)
+      //   .then(response => loader(response.data.results));
       setLoading(false);
     });
 };

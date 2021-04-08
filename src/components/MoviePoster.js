@@ -1,5 +1,4 @@
 import React from 'react';
-import env from 'react-dotenv';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -14,7 +13,7 @@ const MoviePoster = ({ movie }) => {
     <li className="single-poster">
       <div className="movie position-relative">
         <div className="poster-img">
-          <img src={`${env.POSTER_URL}${poster}`} alt="Poster" />
+          <img src={`${process.env.REACT_APP_POSTER_URL}${poster}`} alt="Poster" />
         </div>
         <div className="w-100 info-cont-catalogue position-absolute">
           <div className="info-top d-flex justify-content-between">

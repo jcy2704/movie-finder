@@ -5,7 +5,7 @@ import {
 const moviesReducer = (state = [], action) => {
   switch (action.type) {
     case GET_POPULAR:
-      return [...state, ...action.movies];
+      return action.movies;
     case GET_TOP_RATED:
       return action.movies;
     case GET_UPCOMING:
