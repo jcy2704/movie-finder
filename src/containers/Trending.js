@@ -6,7 +6,7 @@ import '../styles/main/Main.css';
 import { topTrending } from '../helpers/api_methods/api';
 import { loadTrending } from '../actions';
 import BigHero from '../components/BigHero';
-import GenreList from '../helpers/genre';
+import GenreList from '../helpers/genres/genre';
 
 const Trending = ({ movie, loader }) => {
   useEffect(() => {

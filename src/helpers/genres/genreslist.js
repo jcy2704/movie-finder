@@ -1,4 +1,4 @@
-const genres = [
+export default [
   {
     id: 28,
     name: 'Action',
@@ -76,17 +76,3 @@ const genres = [
     name: 'Western',
   },
 ];
-
-const GenreList = ids => {
-  const arr = [];
-
-  if (ids) {
-    ids.forEach(id => {
-      genres.filter(obj => obj.id === id).map(gen => arr.push(gen.name));
-    });
-  }
-
-  return arr;
-};
-
-export default GenreList;
