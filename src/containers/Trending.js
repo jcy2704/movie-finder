@@ -6,6 +6,7 @@ import '../styles/main/Main.css';
 import { topTrending } from '../helpers/api_methods/api';
 import { loadTrending } from '../actions';
 import BigHero from '../components/BigHero';
+import GenreList from '../helpers/genre';
 
 const Trending = ({ movie, loader }) => {
   useEffect(() => {
@@ -18,7 +19,7 @@ const Trending = ({ movie, loader }) => {
 
   return (
     <>
-      <BigHero title={title} backDrop={backDrop} poster={poster} rating={rating} description={overview} />
+      <BigHero title={title} backDrop={backDrop} poster={poster} rating={rating} description={overview} genres={GenreList(movie.genre_ids)} home />
     </>
   );
 };
