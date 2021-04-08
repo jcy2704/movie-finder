@@ -64,16 +64,70 @@ button {
   border: none;
 }
 
-.nothing {
-  height: 100vh;
+.single-poster {
+  margin: 20px;
 }
 
-.loading {
+.poster-img {
+  position: relative;
+}
+
+.poster-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(80%, rgba(0, 0, 0, 0.705)));
+  background-image: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.705) 80%);
+  opacity: 1;
+  border-radius: 0 0 20px 20px;
 }
 
-.spinner-grow {
-  width: 10em;
-  height: 10em;
+.poster-img img {
+  width: 245px;
+  border-radius: 20px;
 }
-/*# sourceMappingURL=index.css.map */
+
+.info-cont-catalogue {
+  height: 22%;
+  bottom: 0;
+  right: 0;
+  padding: 5px 10px 10px;
+}
+
+.info-top h3 {
+  font-size: 1.1em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 70%;
+  font-weight: 500;
+  margin: 0;
+}
+
+.info-top .catalogue-rating {
+  margin: 0;
+}
+
+.info-top .catalogue-rating svg {
+  margin-right: 5px;
+}
+
+.info-top .catalogue-rating svg path {
+  color: #ebb52a;
+}
+
+.catalogue-genres {
+  font-size: 0.85em;
+}
+
+.catalogue-genres li {
+  padding-right: 5px;
+}
+
+.catalogue-genres li button {
+  color: #ebb52a;
+}
+/*# sourceMappingURL=Catalogue.css.map */

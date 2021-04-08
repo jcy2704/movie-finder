@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Trending from '../containers/Trending';
-// import Navigation from '../components/Navigation';
+import Popular from '../containers/Popular';
 
 const Routes = () => (
   <BrowserRouter>
-    {/* <Trending /> */}
+    <Trending />
     {/* <Navigation /> */}
     <Switch>
-      <Route path="/" component={Trending} />
+      <Route path="/" component={Popular} exact />
     </Switch>
   </BrowserRouter>
 );

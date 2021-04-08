@@ -1,7 +1,6 @@
 import React from 'react';
+import Popular from '../containers/Popular';
 
-const Catalogue = () => {
-
-};
+const Catalogue = () => ();
 
 export default Catalogue;

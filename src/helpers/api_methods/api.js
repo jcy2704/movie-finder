@@ -20,9 +20,10 @@ export const topTrending = (loader, setLoading, trailer) => {
     });
 };
 
-export const PopularMovies = loader => {
+export const PopularMovies = (loader, setLoading) => {
   axios.get(`${env.POPULAR}?api_key=${env.API_KEY}`)
     .then(response => {
       loader(response.data.results);
+      setLoading(false);
     });
 };

@@ -2,14 +2,40 @@ import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { PopularMovies } from '../helpers/api_methods/api';
-import { loadPopular, loadVideos } from '../actions';
+import { loadPopular } from '../actions';
 import Loading from '../components/Loading';
+import '../styles/catalogue/Catalogue.css';
+import MoviePoster from '../components/MoviePoster';
 
-const PopularCatalogue = () => {
+const PopularCatalogue = ({ movies, loader }) => {
+  const [isLoading, setLoading] = useState(true);
 
+  useEffect(() => {
+    PopularMovies(loader, setLoading);
+  }, [loader]);
+
+  if (isLoading) {
+    return <Loading nothing />;
+  }
+
+  return (
+    <ul className="catalogue-cont d-flex justify-content-center flex-wrap">
+      {movies.map(movie => (
+        <MoviePoster key={movie.id} movie={movie} />
+      ))}
+    </ul>
+  );
 };
 
-const mapStateToProps = state => ({ movies: state.movies })
-}
+PopularCatalogue.propTypes = {
+  movies: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
+  loader: PropTypes.func.isRequired,
+};
 
-export default PopularCatalogue;
+const mapStateToProps = state => ({ movies: state.movies });
+
+const mapDispatchToProps = dispatch => ({
+  loader: movies => dispatch(loadPopular(movies)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(PopularCatalogue);
