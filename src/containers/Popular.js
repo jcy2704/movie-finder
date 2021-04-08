@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { PopularMovies } from '../helpers/api_methods/api';
+import { loadPopular, loadVideos } from '../actions';
+import Loading from '../components/Loading';
 
-const Popular = () => {
+const PopularCatalogue = () => {
 
 };
 
-export default Popular;
+const mapStateToProps = state => ({ movies: state.movies })
+}
+
+export default PopularCatalogue;

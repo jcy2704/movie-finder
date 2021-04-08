@@ -1,11 +1,9 @@
 import {
-  GET_TRENDING, GET_UPCOMING, GET_POPULAR, GET_PLAYING_NOW, GET_TOP_RATED, GET_VIDEOS,
+  GET_UPCOMING, GET_POPULAR, GET_PLAYING_NOW, GET_TOP_RATED, GET_VIDEOS,
 } from '../actions';
 
 const moviesReducer = (state = [], action) => {
   switch (action.type) {
-    case GET_TRENDING:
-      return action.movie;
     case GET_VIDEOS:
       return { ...state, trailer: action.trailer };
     case GET_POPULAR:

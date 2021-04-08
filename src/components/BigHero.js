@@ -22,7 +22,7 @@ const BigHero = ({
         <div className="d-flex genres">
           {genres.map(genre => (
             <p key={genre}>
-              <button type="button" onClick={() => console.log('er')} name={genre}>
+              <button type="button" name={genre}>
                 {genre}
               </button>
             </p>

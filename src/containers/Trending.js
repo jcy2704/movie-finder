@@ -37,7 +37,7 @@ Trending.propTypes = {
   trailer: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => ({ movie: state.movies });
+const mapStateToProps = state => ({ movie: state.trending });
 
 const mapDispatchToProps = dispatch => ({
   loader: movie => dispatch(loadTrending(movie)),
