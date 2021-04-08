@@ -24,6 +24,10 @@ export const PopularMovies = (loader, setLoading) => {
   axios.get(`${env.POPULAR}?api_key=${env.API_KEY}`)
     .then(response => {
       loader(response.data.results);
+      axios.get(`${env.POPULAR}?api_key=${env.API_KEY}&page=2`)
+        .then(response => loader(response.data.results));
+      axios.get(`${env.POPULAR}?api_key=${env.API_KEY}&page=3`)
+        .then(response => loader(response.data.results));
       setLoading(false);
     });
 };
