@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Loading = ({ nothing }) => (
-
   <div className={`${nothing ? 'nothing' : ''}`}>
     <div className="loading d-flex justify-content-center align-items-center">
       <div className="spinner-grow text-warning" role="status">

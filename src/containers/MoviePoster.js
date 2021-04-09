@@ -1,17 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import axios from 'axios';
 import GenreList from '../helpers/genres/genre';
+import MovieModal from './MovieModal';
 
 const MoviePoster = ({ movie }) => {
+  const [showModal, setShowModal] = useState(false);
+  const [videoURL, setVideoURL] = useState({
+    key: '',
+  });
+
   const {
-    poster_path: poster, title, vote_average: rating, genre_ids: genreIds,
+    id, poster_path: poster, title, vote_average: rating, genre_ids: genreIds,
   } = movie;
+
+  const getVideo = async () => {
+    await axios.get(`${process.env.REACT_APP_DETAILS}/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}`)
+      .then(response => {
+        const [vid] = response.data.results.filter(obj => obj.site === 'YouTube' && obj.type === 'Trailer');
+        setVideoURL(vid);
+      });
+  };
+
+  const switcher = () => {
+    setShowModal(!showModal);
+    if (showModal) {
+      getVideo();
+    }
+  };
 
   return (
     <li className="single-poster">
-      <div className="movie position-relative">
+      <div role="presentation" onClick={switcher} className="movie position-relative">
         <div className="poster-img">
           <img src={`${process.env.REACT_APP_POSTER_URL}${poster}`} alt="Poster" />
         </div>
@@ -36,6 +58,7 @@ const MoviePoster = ({ movie }) => {
           </ul>
         </div>
       </div>
+      <MovieModal showModal={showModal} switcher={switcher} movie={movie} video={videoURL} />
     </li>
   );
 };

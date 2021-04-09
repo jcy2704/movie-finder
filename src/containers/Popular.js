@@ -5,7 +5,7 @@ import { PopularMovies } from '../helpers/api_methods/api';
 import { loadPopular } from '../actions';
 import Loading from '../components/Loading';
 import '../styles/catalogue/Catalogue.css';
-import MoviePoster from '../components/MoviePoster';
+import MoviePoster from './MoviePoster';
 
 const PopularCatalogue = ({ movies, loader }) => {
   const [isLoading, setLoading] = useState(true);

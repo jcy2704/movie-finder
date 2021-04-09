@@ -52,8 +52,12 @@ BigHero.propTypes = {
   poster: PropTypes.string.isRequired,
   genres: PropTypes.arrayOf(PropTypes.string).isRequired,
   rating: PropTypes.number.isRequired,
-  home: PropTypes.bool.isRequired,
+  home: PropTypes.bool,
   video: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
+};
+
+BigHero.defaultProps = {
+  home: false,
 };
 
 export default BigHero;
