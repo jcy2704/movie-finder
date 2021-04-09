@@ -2,6 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-modal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import BigHero from '../components/BigHero';
 import GenreList from '../helpers/genres/genre';
 import '../styles/moviemodal/MovieModal.css';
@@ -18,6 +20,9 @@ const MovieModal = ({
   return (
     <Modal closeTimeoutMS={500} isOpen={showModal} className="movie-modal-content" overlayClassName="modal-overlay" onRequestClose={switcher}>
       <BigHero title={title} genres={GenreList(genreIds)} backDrop={backDrop} rating={rating} poster={poster} description={overview} video={video} />
+      <div>
+        <button type="button" className="close-movie-icon position-absolute" onClick={switcher}><FontAwesomeIcon icon={faTimes}>Close</FontAwesomeIcon></button>
+      </div>
     </Modal>
   );
 };

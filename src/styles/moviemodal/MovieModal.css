@@ -75,4 +75,10 @@ button {
   border-radius: 20px;
   outline: none;
 }
+
+.close-movie-icon {
+  right: 50px;
+  top: 35px;
+  font-size: 1.3em;
+}
 /*# sourceMappingURL=MovieModal.css.map */
