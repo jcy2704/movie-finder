@@ -64,6 +64,14 @@ button {
   border: none;
 }
 
+.container {
+  padding: 0;
+}
+
+.col {
+  padding: 0;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0px;
@@ -117,7 +125,7 @@ button {
   overflow: auto;
   border-radius: 20px;
   outline: none;
-  padding: 100px;
+  padding: 90px;
 }
 
 .close-icon {
@@ -126,12 +134,23 @@ button {
   font-size: 1.3em;
 }
 
+.row {
+  margin: 20px 0;
+}
+
 .each-filter {
-  margin-right: 20px;
   font-size: 1.4em;
 }
 
 .each-filter input {
   margin-right: 10px;
+}
+
+.reset-btn {
+  padding: 7px 25px;
+  background-color: #ebb52a;
+  border-radius: 7px;
+  color: #222;
+  font-weight: 500;
 }
 /*# sourceMappingURL=FilterModal.css.map */

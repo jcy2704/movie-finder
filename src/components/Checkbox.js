@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Checkbox = ({
   id, name, handleChange, checked,
 }) => (
-  <div className="each-filter">
+  <div className="each-filter col">
     <input type="checkbox" value={name} id={id} onChange={handleChange} defaultChecked={checked(id.toString())} />
     <label htmlFor={name}>{name}</label>
   </div>

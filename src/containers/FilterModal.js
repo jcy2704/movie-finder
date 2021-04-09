@@ -41,7 +41,7 @@ const FilterModal = ({
         </div>
 
         <FilterOptions handleChange={handleChange} isChecked={isChecked} />
-        <button onClick={resetFilterHandler} type="button">RESET</button>
+        <button className="reset-btn" onClick={resetFilterHandler} type="button">RESET</button>
       </Modal>
     </div>
   );

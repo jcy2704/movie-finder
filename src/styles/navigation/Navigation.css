@@ -64,6 +64,14 @@ button {
   border: none;
 }
 
+.container {
+  padding: 0;
+}
+
+.col {
+  padding: 0;
+}
+
 .navigation-cont {
   padding: 20px 30px 10px;
   font-size: 1.1em;

@@ -64,6 +64,14 @@ button {
   border: none;
 }
 
+.container {
+  padding: 0;
+}
+
+.col {
+  padding: 0;
+}
+
 .movie-modal-content {
   position: absolute;
   top: 50px;
