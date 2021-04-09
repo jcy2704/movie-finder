@@ -4,16 +4,19 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import '../styles/main/Main.css';
 import { topTrending } from '../helpers/api_methods/api';
-import { loadTrending, loadVideos } from '../actions';
+import { loadTrending } from '../actions';
 import BigHero from '../components/BigHero';
 import GenreList from '../helpers/genres/genre';
 import Loading from '../components/Loading';
 
-const Trending = ({ movie, loader, trailer }) => {
+const Trending = ({ movie, loader }) => {
   const [isLoading, setLoading] = useState(true);
+  const [videoURL, setVideoURL] = useState({
+    key: '',
+  });
 
   useEffect(() => {
-    topTrending(loader, setLoading, trailer);
+    topTrending(loader, setLoading, setVideoURL);
   }, [loader]);
 
   const {
@@ -26,7 +29,7 @@ const Trending = ({ movie, loader, trailer }) => {
 
   return (
     <>
-      <BigHero title={title} backDrop={backDrop} poster={poster} rating={rating} description={overview} genres={GenreList(movie.genre_ids)} video={movie.trailer} home />
+      <BigHero title={title} backDrop={backDrop} poster={poster} rating={rating} description={overview} genres={GenreList(movie.genre_ids)} video={videoURL} home />
     </>
   );
 };
@@ -34,14 +37,12 @@ const Trending = ({ movie, loader, trailer }) => {
 Trending.propTypes = {
   movie: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
   loader: PropTypes.func.isRequired,
-  trailer: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({ movie: state.trending });
 
 const mapDispatchToProps = dispatch => ({
   loader: movie => dispatch(loadTrending(movie)),
-  trailer: trailer => dispatch(loadVideos(trailer)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Trending);
