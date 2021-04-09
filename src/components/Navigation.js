@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import '../styles/navigation/Navigation.css';
+import FilterModal from './FilterModal';
 
 const Navigation = () => (
   <>
@@ -12,7 +11,7 @@ const Navigation = () => (
         <Link to="/top">Top Rated</Link>
         <Link to="/upcoming">Upcoming</Link>
       </div>
-      <button type="button"><FontAwesomeIcon icon={faFilter}>Filter</FontAwesomeIcon></button>
+      <FilterModal />
     </div>
   </>
 );
