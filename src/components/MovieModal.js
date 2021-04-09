@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import BigHero from '../components/BigHero';
+import BigHero from './BigHero';
 import GenreList from '../helpers/genres/genre';
 import '../styles/moviemodal/MovieModal.css';
 

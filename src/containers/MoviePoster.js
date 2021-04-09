@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import axios from 'axios';
 import GenreList from '../helpers/genres/genre';
-import MovieModal from './MovieModal';
+import MovieModal from '../components/MovieModal';
+import getVideo from '../helpers/getVideo';
 
 const MoviePoster = ({ movie }) => {
   const [showModal, setShowModal] = useState(false);
@@ -16,18 +16,10 @@ const MoviePoster = ({ movie }) => {
     id, poster_path: poster, title, vote_average: rating, genre_ids: genreIds,
   } = movie;
 
-  const getVideo = async () => {
-    await axios.get(`${process.env.REACT_APP_DETAILS}/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}`)
-      .then(response => {
-        const [vid] = response.data.results.filter(obj => obj.site === 'YouTube' && obj.type === 'Trailer');
-        setVideoURL(vid);
-      });
-  };
-
   const switcher = () => {
     setShowModal(!showModal);
     if (showModal) {
-      getVideo();
+      getVideo(id, setVideoURL);
     }
   };
 

@@ -2,8 +2,8 @@
 import axios from 'axios';
 import randInt from '../randInt';
 
-const Videos = (id, loader, setLoading) => {
-  axios.get(`${process.env.REACT_APP_DETAILS}/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}`)
+const Videos = async (id, loader, setLoading) => {
+  await axios.get(`${process.env.REACT_APP_DETAILS}/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       const [vid] = response.data.results.filter(obj => obj.site === 'YouTube' && obj.type === 'Trailer');
       loader(vid);
@@ -11,8 +11,8 @@ const Videos = (id, loader, setLoading) => {
     });
 };
 
-export const topTrending = (loader, setLoading, trailer) => {
-  axios.get(`${process.env.REACT_APP_TRENDING}?api_key=${process.env.REACT_APP_API_KEY}`)
+export const topTrending = async (loader, setLoading, trailer) => {
+  await axios.get(`${process.env.REACT_APP_TRENDING}?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       const movie = randInt(0, 10);
       loader(response.data.results[movie]);
@@ -20,8 +20,8 @@ export const topTrending = (loader, setLoading, trailer) => {
     });
 };
 
-export const PopularMovies = (loader, setLoading) => {
-  axios.get(`${process.env.REACT_APP_POPULAR}?api_key=${process.env.REACT_APP_API_KEY}`)
+export const PopularMovies = async (loader, setLoading) => {
+  await axios.get(`${process.env.REACT_APP_POPULAR}?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       loader(response.data.results);
       // axios.get(`${process.env.REACT_APP_POPULAR}?api_key=${process.env.REACT_APP_API_KEY}&page=2`)
@@ -32,8 +32,8 @@ export const PopularMovies = (loader, setLoading) => {
     });
 };
 
-export const TopRatedMovies = (loader, setLoading) => {
-  axios.get(`${process.env.REACT_APP_TOP_RATED}?api_key=${process.env.REACT_APP_API_KEY}`)
+export const TopRatedMovies = async (loader, setLoading) => {
+  await axios.get(`${process.env.REACT_APP_TOP_RATED}?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       loader(response.data.results);
       // axios.get(`${process.env.REACT_APP_TOP_RATED}?api_key=${process.env.REACT_APP_API_KEY}&page=2`)
@@ -44,8 +44,8 @@ export const TopRatedMovies = (loader, setLoading) => {
     });
 };
 
-export const UpcomingMovies = (loader, setLoading) => {
-  axios.get(`${process.env.REACT_APP_UPCOMING}?api_key=${process.env.REACT_APP_API_KEY}`)
+export const UpcomingMovies = async (loader, setLoading) => {
+  await axios.get(`${process.env.REACT_APP_UPCOMING}?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       loader(response.data.results);
       // axios.get(`${process.env.REACT_APP_UPCOMING}?api_key=${process.env.REACT_APP_API_KEY}&page=2`)
