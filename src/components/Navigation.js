@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navigation/Navigation.css';
-import FilterModal from './FilterModal';
+import FilterModal from '../containers/FilterModal';
 
 const Navigation = () => (
   <>
