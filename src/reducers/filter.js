@@ -1,4 +1,4 @@
-import { ADD_FILTER, REMOVE_FILTER } from '../actions';
+import { ADD_FILTER, REMOVE_FILTER, RESET_FILTER } from '../actions';
 
 const filterReducer = (state = [], action) => {
   switch (action.type) {
@@ -6,6 +6,8 @@ const filterReducer = (state = [], action) => {
       return [...state, action.filter];
     case REMOVE_FILTER:
       return state.filter(idx => idx !== action.filter);
+    case RESET_FILTER:
+      return [];
     default:
       return state;
   }
