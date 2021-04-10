@@ -43,7 +43,6 @@
   - [Available Commands](#available-commands)
   - [Writing Code](#writing-code)
   - [Deploying Code](#deploying-code)
-- [📜 Acknowledgements and Credits](#📜-acknowledgements-and-credits)
 - [👤 Author](#👤-author)
 - [🤝 Contributing](#🤝-contributing)
 - [⭐ Show your support](#⭐-show-your-support)
