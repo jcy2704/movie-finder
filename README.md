@@ -33,27 +33,27 @@
 </p>
 
 ## Table of Contents
-- [🎬 About Movie Finder](#about-movie-finder)
-- [⚒️ Built With React & Redux](#built-with)
-- [🖥️ Setup](#setup)
+- [🎬 About Movie Finder](#🎬-about-movie-finder)
+- [⚒️ Built With React & Redux](#⚒️-built-with-react-&-redux)
+- [🖥️ Setup](#🖥️-setup)
   - [Requirements](#requirements)
   - [Installation](#installation)
   - [Run Movie Finder](#run-movie-finder)
-- [✍️ Make Your Own Changes](#make-your-own-changes)
+- [✍️ Making Your Own Changes](#✍️-making-your-own-changes)
   - [Available Commands](#available-commands)
   - [Writing Code](#writing-code)
   - [Deploying Code](#deploying-code)
-- [📜 Acknowledgements and Credits](#acknowledgements-and-credits)
-- [👤 Author](#author)
-- [🤝 Contributing](#-contributing)
-- [⭐ Show your support](#show-your-support)
+- [📜 Acknowledgements and Credits](#📜-acknowledgements-and-credits)
+- [👤 Author](#👤-author)
+- [🤝 Contributing](#🤝-contributing)
+- [⭐ Show your support](#⭐-show-your-support)
 
 ## 🎬 About Movie Finder
 
-[**Movie Finder**](http://serene-reef-31148.herokuapp.com/) is a ReactJS web app where it renders the catalogue of the popular, top rated, and upcoming movies. You can browse all the movies available as well as finding all basic information of each movie in the listing.
+[**Movie Finder**](http://serene-reef-31148.herokuapp.com/) is a movie catalogue where you can find all the popular, top rated, and upcoming movies. You can browse and filter all the movie available as well as finding all basic information of each move in the listing. It was build with ReactJS and Redux 
 
 
-## ⚒️ Built With
+## ⚒️ Built With React & Redux
 
 **<img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React"> [ReactJS](https://reactjs.org)**
 
@@ -105,7 +105,7 @@ And there you are running the app.
 
 **Enjoy!**
 
-## Making Your Own Changes
+## ✍️ Making Your Own Changes
 
 ### Available Commands
 
