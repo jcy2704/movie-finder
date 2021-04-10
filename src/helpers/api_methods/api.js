@@ -12,26 +12,38 @@ export const topTrending = async (loader, setLoading, setVideoURL) => {
     });
 };
 
-export const PopularMovies = async (loader, setLoading) => {
+export const PopularMovies = async (loader, setLoading, adder) => {
   await axios.get(`${process.env.REACT_APP_POPULAR}?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       loader(response.data.results);
+      axios.get(`${process.env.REACT_APP_POPULAR}?api_key=${process.env.REACT_APP_API_KEY}&page=2`)
+        .then(response => adder(response.data.results));
+      axios.get(`${process.env.REACT_APP_POPULAR}?api_key=${process.env.REACT_APP_API_KEY}&page=3`)
+        .then(response => adder(response.data.results));
       setLoading(false);
     });
 };
 
-export const TopRatedMovies = async (loader, setLoading) => {
+export const TopRatedMovies = async (loader, setLoading, adder) => {
   await axios.get(`${process.env.REACT_APP_TOP_RATED}?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       loader(response.data.results);
+      axios.get(`${process.env.REACT_APP_TOP_RATED}?api_key=${process.env.REACT_APP_API_KEY}&page=2`)
+        .then(response => adder(response.data.results));
+      axios.get(`${process.env.REACT_APP_TOP_RATED}?api_key=${process.env.REACT_APP_API_KEY}&page=3`)
+        .then(response => adder(response.data.results));
       setLoading(false);
     });
 };
 
-export const UpcomingMovies = async (loader, setLoading) => {
+export const UpcomingMovies = async (loader, setLoading, adder) => {
   await axios.get(`${process.env.REACT_APP_UPCOMING}?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(response => {
       loader(response.data.results);
+      axios.get(`${process.env.REACT_APP_UPCOMING}?api_key=${process.env.REACT_APP_API_KEY}&page=2`)
+        .then(response => adder(response.data.results));
+      axios.get(`${process.env.REACT_APP_UPCOMING}?api_key=${process.env.REACT_APP_API_KEY}&page=3`)
+        .then(response => adder(response.data.results));
       setLoading(false);
     });
 };
