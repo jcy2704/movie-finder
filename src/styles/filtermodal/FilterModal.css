@@ -22,18 +22,14 @@
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
   font-family: "SF-Pro", sans-serif;
@@ -78,10 +74,10 @@ h1 {
 
 .modal-overlay {
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -89,8 +85,8 @@ h1 {
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
-  -webkit-animation: modalAppear 0.3s ease-in-out;
-          animation: modalAppear 0.3s ease-in-out;
+  -webkit-animation: modalappear 0.3s ease-in-out;
+  animation: modalAppear 0.3s ease-in-out;
 }
 
 .ReactModal__Overlay--after-open {
@@ -105,6 +101,7 @@ h1 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -114,6 +111,7 @@ h1 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -157,4 +155,3 @@ h1 {
   color: #222;
   font-weight: 500;
 }
-/*# sourceMappingURL=FilterModal.css.map */

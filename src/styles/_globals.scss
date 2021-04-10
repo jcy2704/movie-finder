@@ -15,8 +15,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  margin-block-start: 0;
-  margin-block-end: 0;
   margin: 0;
   padding: 0;
   font-family: $sf;

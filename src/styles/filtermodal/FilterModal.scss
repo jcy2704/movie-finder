@@ -2,10 +2,10 @@
 
 .modal-overlay {
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -15,11 +15,11 @@
   animation: modalAppear 0.3s ease-in-out;
 }
 
-.ReactModal__Overlay--after-open{
+.ReactModal__Overlay--after-open {
   opacity: 1;
 }
 
-.ReactModal__Overlay--before-close{
+.ReactModal__Overlay--before-close {
   opacity: 0;
 }
 

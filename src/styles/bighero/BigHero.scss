@@ -9,7 +9,7 @@
 .hero-img {
   position: relative;
 
-  &::after{
+  &::after {
     content: '';
     position: absolute;
     top: 0;
@@ -74,6 +74,7 @@
 
   button {
     @extend p;
+
     padding: 0;
   }
 }
