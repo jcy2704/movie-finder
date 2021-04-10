@@ -64,6 +64,10 @@ button {
   border: none;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
 .container {
   padding: 0;
 }

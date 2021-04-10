@@ -6,8 +6,9 @@ import { loadPopular } from '../actions';
 import Loading from '../components/Loading';
 import '../styles/catalogue/Catalogue.css';
 import MoviePoster from './MoviePoster';
+import filteredMovies from '../helpers/filter';
 
-const PopularCatalogue = ({ movies, loader }) => {
+const PopularCatalogue = ({ movies, loader, filters }) => {
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -20,7 +21,7 @@ const PopularCatalogue = ({ movies, loader }) => {
 
   return (
     <ul className="catalogue-cont d-flex justify-content-center flex-wrap">
-      {movies.map(movie => (
+      {filteredMovies(movies, filters).map(movie => (
         <MoviePoster key={movie.id} movie={movie} />
       ))}
     </ul>
@@ -28,11 +29,12 @@ const PopularCatalogue = ({ movies, loader }) => {
 };
 
 PopularCatalogue.propTypes = {
+  filters: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
   movies: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
   loader: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => ({ movies: state.movies });
+const mapStateToProps = state => ({ movies: state.movies, filters: state.filter });
 
 const mapDispatchToProps = dispatch => ({
   loader: movies => dispatch(loadPopular(movies)),

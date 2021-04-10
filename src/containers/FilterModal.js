@@ -37,11 +37,13 @@ const FilterModal = ({
         <div className="content-container position-relative">
           <button type="button" className="close-icon position-absolute" onClick={switcher}><FontAwesomeIcon icon={faTimes}>Close</FontAwesomeIcon></button>
 
-          <h1>Filter</h1>
+          <div className="d-flex justify-content-between">
+            <h1>Filter</h1>
+            <button className="reset-btn" onClick={resetFilterHandler} type="button">RESET</button>
+          </div>
         </div>
 
         <FilterOptions handleChange={handleChange} isChecked={isChecked} />
-        <button className="reset-btn" onClick={resetFilterHandler} type="button">RESET</button>
       </Modal>
     </div>
   );

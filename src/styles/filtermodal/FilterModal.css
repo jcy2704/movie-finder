@@ -64,6 +64,10 @@ button {
   border: none;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
 .container {
   padding: 0;
 }
@@ -147,7 +151,7 @@ button {
 }
 
 .reset-btn {
-  padding: 7px 25px;
+  padding: 0 30px;
   background-color: #ebb52a;
   border-radius: 7px;
   color: #222;

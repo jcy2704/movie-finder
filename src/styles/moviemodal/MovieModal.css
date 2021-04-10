@@ -64,6 +64,10 @@ button {
   border: none;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
 .container {
   padding: 0;
 }
@@ -85,8 +89,8 @@ button {
 }
 
 .close-movie-icon {
-  right: 50px;
-  top: 35px;
+  right: 40px;
+  top: 25px;
   font-size: 1.3em;
 }
 /*# sourceMappingURL=MovieModal.css.map */
