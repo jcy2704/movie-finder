@@ -33,7 +33,7 @@ const FilterModal = ({
     <div>
       <button type="button" onClick={switcher}><FontAwesomeIcon icon={faFilter}>Filter</FontAwesomeIcon></button>
 
-      <Modal closeTimeoutMS={500} isOpen={showModal} className="filter-modal-content" overlayClassName="modal-overlay" onRequestClose={switcher}>
+      <Modal closeTimeoutMS={500} isOpen={showModal} className="filter-modal-content" overlayClassName="modal-overlay" onRequestClose={switcher} parentSelector={() => document.querySelector('#modalsContainer')}>
         <div className="content-container position-relative">
           <button type="button" className="close-icon position-absolute" onClick={switcher}><FontAwesomeIcon icon={faTimes}>Close</FontAwesomeIcon></button>
 

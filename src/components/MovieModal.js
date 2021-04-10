@@ -18,7 +18,7 @@ const MovieModal = ({
   Modal.setAppElement('body');
 
   return (
-    <Modal closeTimeoutMS={500} isOpen={showModal} className="movie-modal-content" overlayClassName="modal-overlay" onRequestClose={switcher}>
+    <Modal closeTimeoutMS={500} isOpen={showModal} className="movie-modal-content" overlayClassName="modal-overlay" onRequestClose={switcher} parentSelector={() => document.querySelector('#modalsContainer')}>
       <BigHero title={title} genres={GenreList(genreIds)} backDrop={backDrop} rating={rating} poster={poster} description={overview} video={video} />
       <div>
         <button type="button" className="close-movie-icon position-absolute" onClick={switcher}><FontAwesomeIcon icon={faTimes}>Close</FontAwesomeIcon></button>

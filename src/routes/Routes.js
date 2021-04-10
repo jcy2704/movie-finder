@@ -15,6 +15,7 @@ const Routes = () => (
       <Route path="/top" component={TopRated} />
       <Route path="/upcoming" component={Upcoming} />
     </Switch>
+    <div id="modalsContainer" />
   </BrowserRouter>
 );
 
