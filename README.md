@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="http://serene-reef-31148.herokuapp.com/">
+    <img width="140" src="./src/assets/icon.svg" alt="Logo">
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
 
-## Available Scripts
+  [**Movie Finder**](http://serene-reef-31148.herokuapp.com/)
 
-In the project directory, you can run:
+</h1>
 
-### `yarn start`
+<p align="center">
+  <strong>Web App created by Steven Jack Chung</strong>
+  <br>
+  Project created using <a href="http://developers.themoviedb.org">TheMovieDB API</a> and <a href="https://reactjs.org">ReactJS</a> & <a href="http://redux.js.org">Redux</a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+  <a href="http://serene-reef-31148.herokuapp.com/">
+    <img src="https://img.shields.io/badge/OPEN%20Movie%20Finder-red?style=for-the-badge">
+  </a>
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p align="center">
+  <a href="https://github.com/jcy2704/movie-finder/issues">
+    <img src="https://img.shields.io/badge/REPORT%20A%20BUG-royalblue?style=for-the-badge">
+  </a>
+   ‎ ‎ ‎ ‎
+  <a href="https://github.com/jcy2704/movie-finder/issues">
+    <img src="https://img.shields.io/badge/Request%20a%20feature-royalblue?style=for-the-badge">
+  </a>
+</p>
 
-### `yarn test`
+## Table of Contents
+- [🎬 About Movie Finder](#about-movie-finder)
+- [⚒️ Built With React & Redux](#built-with)
+- [🖥️ Setup](#setup)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Run Movie Finder](#run-movie-finder)
+- [✍️ Make Your Own Changes](#make-your-own-changes)
+  - [Available Commands](#available-commands)
+  - [Writing Code](#writing-code)
+  - [Deploying Code](#deploying-code)
+- [📜 Acknowledgements and Credits](#acknowledgements-and-credits)
+- [👤 Author](#author)
+- [🤝 Contributing](#-contributing)
+- [⭐ Show your support](#show-your-support)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎬 About Movie Finder
 
-### `yarn build`
+[**Movie Finder**](http://serene-reef-31148.herokuapp.com/) is a ReactJS web app where it renders the catalogue of the popular, top rated, and upcoming movies. You can browse all the movies available as well as finding all basic information of each movie in the listing.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚒️ Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**<img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React"> [ReactJS](https://reactjs.org)**
 
-### `yarn eject`
+**<img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png" alt="Redux"> [Redux](http://redux.js.org)**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🖥️ Setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Requirements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Internet Browser (Chrome, Firefox, Opera, etc)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[Git](https://git-scm.com/downloads) for version control.
 
-## Learn More
+[Node.js](https://nodejs.org) is required to install dependencies and run scripts via `npm`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After installing the tools required, go ahead and clone this repository by using [Git](https://git-scm.com/downloads) commands.
 
-### Code Splitting
+```
+    git clone https://github.com/jcy2704/movie-finder.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Or you can also download this repository and access it with navigation commands.
 
-### Analyzing the Bundle Size
+```
+    cd /path/to/repository/movie-finder
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To be able to run the web app smoothly you need to install Node dependencies by typing the following command on your terminal
 
-### Making a Progressive Web App
+```
+    npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Now you are good to go!
 
-### Advanced Configuration
+### Run Movie Finder App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Now that you've installed the repository correctly. Go ahead and test it out by running the following command on the terminal
 
-### Deployment
+```
+    npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This command will open a `localhost:3000` server where it will be running the web app until you close the server by using the key combo `CTRL + C` on the terminal.
 
-### `yarn build` fails to minify
+And there you are running the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Enjoy!**
+
+## Making Your Own Changes
+
+### Available Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm install` | Install project dependencies |
+| `npm start` | Build project and open web server running project |
+| `npm run build` | Builds code bundle with production settings (minification, uglification, etc..) |
+
+### Writing Code
+
+After cloning the repo, run `npm install` from your project directory. Then, you can start the local development server by running `npm start`.
+
+After starting the development server with `npm start`, you can edit any files in the `src` folder and webpack will automatically recompile and reload your server (available at `http://localhost:3000` by default).
+
+### Deploying Code
+
+After you run the `npm run build` command, your code will be built into a single bundle located at `dist/bundle.min.js` along with any other assets you project depended.
+
+
+## 👤 Author
+
+👤 **Steven Jack Chung**
+
+- GitHub: [@jcy2704](https://github.com/jcy2704)
+- Twitter: [@yiak_](https://twitter.com/yiak_)
+- LinkedIn: [Steven Jack Chung](https://linkedin.com/in/stevenjchung)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/jcy2704/movie-finder/issues).
+
+## ⭐ Show your support
+
+Give a ⭐️ if you like this project!
