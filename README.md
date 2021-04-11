@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="http://serene-reef-31148.herokuapp.com/">
+  <a href="http://moviefinder.stevenchung.me">
     <img width="140" src="./src/assets/icon.svg" alt="Logo">
   </a>
 </p>
 
 <h1 align="center">
 
-  [**Movie Finder**](http://serene-reef-31148.herokuapp.com/)
+  [**Movie Finder**](http://moviefinder.stevenchung.me)
 
 </h1>
 
@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="http://serene-reef-31148.herokuapp.com/">
+  <a href="http://moviefinder.stevenchung.me">
     <img src="https://img.shields.io/badge/OPEN%20Movie%20Finder-red?style=for-the-badge">
   </a>
 </p>
@@ -49,7 +49,7 @@
 
 ## 🎬 About Movie Finder
 
-[**Movie Finder**](http://serene-reef-31148.herokuapp.com/) is a movie catalogue where you can find all the popular, top rated, and upcoming movies. You can browse and filter all the movie available as well as finding all basic information of each move in the listing. It was build with ReactJS & Redux and [The MovieDB](http://developers.themoviedb.org) was the API used to retrieve all information for the movies catalogue.
+[**Movie Finder**](http://moviefinder.stevenchung.me) is a movie catalogue where you can find all the popular, top rated, and upcoming movies. You can browse and filter all the movie available as well as finding all basic information of each move in the listing. It was build with ReactJS & Redux and [The MovieDB](http://developers.themoviedb.org) was the API used to retrieve all information for the movies catalogue.
 
 
 ## ⚒️ Built With React & Redux
