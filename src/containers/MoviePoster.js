@@ -18,9 +18,7 @@ const MoviePoster = ({ movie }) => {
 
   const switcher = () => {
     setShowModal(!showModal);
-    if (showModal) {
-      getVideo(id, setVideoURL);
-    }
+    getVideo(id, setVideoURL);
   };
 
   return (
