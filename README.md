@@ -49,7 +49,7 @@
 
 ## 🎬 About Movie Finder
 
-[**Movie Finder**](http://serene-reef-31148.herokuapp.com/) is a movie catalogue where you can find all the popular, top rated, and upcoming movies. You can browse and filter all the movie available as well as finding all basic information of each move in the listing. It was build with ReactJS and Redux 
+[**Movie Finder**](http://serene-reef-31148.herokuapp.com/) is a movie catalogue where you can find all the popular, top rated, and upcoming movies. You can browse and filter all the movie available as well as finding all basic information of each move in the listing. It was build with ReactJS & Redux and [The MovieDB](http://developers.themoviedb.org) was the API used to retrieve all information for the movies catalogue.
 
 
 ## ⚒️ Built With React & Redux
@@ -119,6 +119,21 @@ And there you are running the app.
 After cloning the repo, run `npm install` from your project directory. Then, you can start the local development server by running `npm start`.
 
 After starting the development server with `npm start`, you can edit any files in the `src` folder and webpack will automatically recompile and reload your server (available at `http://localhost:3000` by default).
+
+### Creating your own ENV variables
+
+To be able to create your own environmental variables you need to create a `.env` file in the root of the project.
+
+You need to also name the variable with the follow prefix `REACT_APP_`.
+
+For example,
+
+```
+  // .env
+
+  REACT_APP_API_KEY=1234567
+  REACT_APP_API_URL=https://api.example.com/
+```
 
 ### Deploying Code
 
