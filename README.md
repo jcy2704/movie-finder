@@ -10,6 +10,12 @@
 
 </h1>
 
+<h3 align="center">
+
+  **CATALOGUE OF MOVIES**
+
+</h3>
+
 <p align="center">
   <strong>Web App created by Steven Jack Chung</strong>
   <br>
@@ -35,6 +41,7 @@
 ## Table of Contents
 - [🎬 About Movie Finder](#🎬-about-movie-finder)
 - [⚒️ Built With React & Redux](#⚒️-built-with-react-&-redux)
+- [🟢 Live Demo](#🟢-live-demo)
 - [🖥️ Setup](#🖥️-setup)
   - [Requirements](#requirements)
   - [Installation](#installation)
@@ -49,7 +56,7 @@
 
 ## 🎬 About Movie Finder
 
-[**Movie Finder**](https://moviefinder.stevenchung.me) is a movie catalogue where you can find all the popular, top rated, and upcoming movies. You can browse and filter all the movie available as well as finding all basic information of each move in the listing. It was build with ReactJS & Redux and [The MovieDB](http://developers.themoviedb.org) was the API used to retrieve all information for the movies catalogue.
+[**Movie Finder**](https://moviefinder.stevenchung.me) is a movies catalogue where you can find all the popular, top rated, and upcoming movies. You can browse and filter all the movie available as well as finding all basic information of each move in the listing. It was build with ReactJS & Redux and [The MovieDB](http://developers.themoviedb.org) was the API used to retrieve all information for the movies catalogue.
 
 
 ## ⚒️ Built With React & Redux
@@ -57,6 +64,22 @@
 **<img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React"> [ReactJS](https://reactjs.org)**
 
 **<img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png" alt="Redux"> [Redux](http://redux.js.org)**
+
+[Netlify](https://netlify.com)
+
+Axios
+
+## 🟢 Live Demo
+
+<h3>
+
+  [Movie Finder](https://moviefinder.stevenchung.me)
+
+</h3>
+
+<a href="https://moviefinder.stevenchung.me">
+  <img width="1440" alt="image" src="https://user-images.githubusercontent.com/64392568/114433684-b71db600-9b87-11eb-9829-849c5d04baf0.png">
+</a>
 
 ## 🖥️ Setup
 
