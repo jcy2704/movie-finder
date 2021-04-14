@@ -22,14 +22,14 @@
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
   font-family: "SF-Pro", sans-serif;
@@ -124,8 +124,7 @@ h1 {
   font-size: 1.5em;
 }
 
-.genres p,
-.genres button {
+.genres p, .genres button {
   color: #ebb52a;
   padding-right: 15px;
   font-size: 1.1em;
@@ -167,3 +166,4 @@ h1 {
 .trailer-cont .trailer .play-icon path {
   color: #222;
 }
+/*# sourceMappingURL=BigHero.css.map */

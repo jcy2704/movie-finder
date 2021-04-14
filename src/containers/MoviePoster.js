@@ -1,24 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import GenreList from '../helpers/genres/genre';
-import MovieModal from '../components/MovieModal';
-import getVideo from '../helpers/getVideo';
 
-const MoviePoster = ({ movie }) => {
-  const [showModal, setShowModal] = useState(false);
-  const [videoURL, setVideoURL] = useState({
-    key: '',
-  });
-
+const MoviePoster = ({ movie, history }) => {
   const {
     id, poster_path: poster, title, vote_average: rating, genre_ids: genreIds,
   } = movie;
 
   const switcher = () => {
-    setShowModal(!showModal);
-    getVideo(id, setVideoURL);
+    history.push(`/movie/${id}`);
   };
 
   return (
@@ -48,13 +41,13 @@ const MoviePoster = ({ movie }) => {
           </ul>
         </div>
       </div>
-      <MovieModal showModal={showModal} switcher={switcher} movie={movie} video={videoURL} />
     </li>
   );
 };
 
 MoviePoster.propTypes = {
   movie: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  history: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
-export default MoviePoster;
+export default withRouter(MoviePoster);

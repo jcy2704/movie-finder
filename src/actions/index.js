@@ -6,6 +6,7 @@ export const ADD_FILTER = 'ADD_FILTER';
 export const REMOVE_FILTER = 'REMOVE_FILTER';
 export const RESET_FILTER = 'RESET_FILTER';
 export const ADD_MOVIES = 'ADD_MOVIES';
+export const CURRENT_MOVIE = 'CURRENT_MOVIE';
 
 export const loadTrending = movie => ({ type: GET_TRENDING, movie });
 export const addMovies = movies => ({ type: ADD_MOVIES, movies });
@@ -15,3 +16,4 @@ export const loadUpcoming = movies => ({ type: GET_UPCOMING, movies });
 export const addFilter = filter => ({ type: ADD_FILTER, filter });
 export const removeFilter = filter => ({ type: REMOVE_FILTER, filter });
 export const resetFilter = filter => ({ type: RESET_FILTER, filter });
+export const currentMovie = movie => ({ type: CURRENT_MOVIE, movie });
