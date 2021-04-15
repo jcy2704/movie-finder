@@ -5,10 +5,10 @@ import { TopRatedMovies } from '../helpers/api_methods/api';
 import { addMovies, loadTopRated } from '../actions';
 import Loading from '../components/Loading';
 import '../styles/catalogue/Catalogue.css';
-import MoviePoster from './MoviePoster';
+import MoviePoster from '../components/MoviePoster';
 import filteredMovies from '../helpers/filter';
 
-const PopularCatalogue = ({
+const TopRatedCatalogue = ({
   movies, loader, filters, adder,
 }) => {
   const [isLoading, setLoading] = useState(true);
@@ -18,7 +18,7 @@ const PopularCatalogue = ({
   }, [loader]);
 
   if (isLoading) {
-    return <Loading nothing />;
+    return <Loading />;
   }
 
   return (
@@ -30,7 +30,7 @@ const PopularCatalogue = ({
   );
 };
 
-PopularCatalogue.propTypes = {
+TopRatedCatalogue.propTypes = {
   movies: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
   filters: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
   loader: PropTypes.func.isRequired,
@@ -44,4 +44,4 @@ const mapDispatchToProps = dispatch => ({
   adder: movies => dispatch(addMovies(movies)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(PopularCatalogue);
+export default connect(mapStateToProps, mapDispatchToProps)(TopRatedCatalogue);

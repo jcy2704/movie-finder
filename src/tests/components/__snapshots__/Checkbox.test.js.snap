@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Checkbox 1`] = `
+<div
+  className="each-filter col"
+>
+  <input
+    defaultChecked={true}
+    id={1}
+    onChange={[Function]}
+    type="checkbox"
+    value="action"
+  />
+  <label
+    htmlFor="action"
+  >
+    action
+  </label>
+</div>
+`;

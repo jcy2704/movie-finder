@@ -31,7 +31,7 @@ const FilterModal = ({
 
   return (
     <div>
-      <button type="button" onClick={switcher}><FontAwesomeIcon icon={faFilter}>Filter</FontAwesomeIcon></button>
+      <button type="button" data-testid="filter-btn" onClick={switcher}><FontAwesomeIcon icon={faFilter}>Filter</FontAwesomeIcon></button>
 
       <Modal closeTimeoutMS={500} isOpen={showModal} className="filter-modal-content" overlayClassName="modal-overlay" onRequestClose={switcher} parentSelector={() => document.querySelector('#modalsContainer')}>
         <div className="content-container position-relative">

@@ -5,7 +5,7 @@ import { PopularMovies } from '../helpers/api_methods/api';
 import { addMovies, loadPopular } from '../actions';
 import Loading from '../components/Loading';
 import '../styles/catalogue/Catalogue.css';
-import MoviePoster from './MoviePoster';
+import MoviePoster from '../components/MoviePoster';
 import filteredMovies from '../helpers/filter';
 
 const PopularCatalogue = ({
@@ -18,7 +18,7 @@ const PopularCatalogue = ({
   }, [loader]);
 
   if (isLoading) {
-    return <Loading nothing />;
+    return <Loading />;
   }
 
   return (

@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import GenreList from '../helpers/genres/genre';
 
-const MoviePoster = ({ movie, history }) => {
+const MoviePoster = ({ movie }) => {
   const {
     id, poster_path: poster, title, vote_average: rating, genre_ids: genreIds,
   } = movie;
+
+  const history = useHistory();
 
   const switcher = () => {
     history.push(`/movie/${id}`);
@@ -47,7 +49,6 @@ const MoviePoster = ({ movie, history }) => {
 
 MoviePoster.propTypes = {
   movie: PropTypes.oneOfType([PropTypes.object]).isRequired,
-  history: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
-export default withRouter(MoviePoster);
+export default MoviePoster;

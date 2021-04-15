@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import '../styles/main/Main.css';
 import { topTrending } from '../helpers/api_methods/api';
@@ -11,7 +11,7 @@ import GenreList from '../helpers/genres/genre';
 import Loading from '../components/Loading';
 
 const Trending = ({
-  movie, loader, location,
+  movie, loader,
 }) => {
   const [isLoading, setLoading] = useState(true);
   const [videoURL, setVideoURL] = useState({
@@ -27,9 +27,10 @@ const Trending = ({
   } = movie;
 
   if (isLoading) {
-    return <Loading nothing />;
+    return <Loading />;
   }
 
+  const location = useLocation();
   const { pathname } = location;
 
   return (
@@ -42,7 +43,6 @@ const Trending = ({
 Trending.propTypes = {
   movie: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
   loader: PropTypes.func.isRequired,
-  location: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
 const mapStateToProps = state => ({ movie: state.trending });
@@ -51,4 +51,4 @@ const mapDispatchToProps = dispatch => ({
   loader: movie => dispatch(loadTrending(movie)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Trending));
+export default connect(mapStateToProps, mapDispatchToProps)(Trending);

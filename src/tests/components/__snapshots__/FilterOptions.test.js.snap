@@ -1,0 +1,438 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Filter Options 1`] = `
+<form>
+  <fieldset
+    className="container"
+  >
+    <div
+      className="row w-100 flex-wrap justify-content-between"
+    >
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={28}
+          onChange={[Function]}
+          type="checkbox"
+          value="Action"
+        />
+        <label
+          htmlFor="Action"
+        >
+          Action
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={12}
+          onChange={[Function]}
+          type="checkbox"
+          value="Adventure"
+        />
+        <label
+          htmlFor="Adventure"
+        >
+          Adventure
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={16}
+          onChange={[Function]}
+          type="checkbox"
+          value="Animation"
+        />
+        <label
+          htmlFor="Animation"
+        >
+          Animation
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={35}
+          onChange={[Function]}
+          type="checkbox"
+          value="Comedy"
+        />
+        <label
+          htmlFor="Comedy"
+        >
+          Comedy
+        </label>
+      </div>
+    </div>
+    <div
+      className="row w-100 flex-wrap justify-content-between"
+    >
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={35}
+          onChange={[Function]}
+          type="checkbox"
+          value="Comedy"
+        />
+        <label
+          htmlFor="Comedy"
+        >
+          Comedy
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={80}
+          onChange={[Function]}
+          type="checkbox"
+          value="Crime"
+        />
+        <label
+          htmlFor="Crime"
+        >
+          Crime
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={99}
+          onChange={[Function]}
+          type="checkbox"
+          value="Documentary"
+        />
+        <label
+          htmlFor="Documentary"
+        >
+          Documentary
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={18}
+          onChange={[Function]}
+          type="checkbox"
+          value="Drama"
+        />
+        <label
+          htmlFor="Drama"
+        >
+          Drama
+        </label>
+      </div>
+    </div>
+    <div
+      className="row w-100 flex-wrap justify-content-between"
+    >
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={18}
+          onChange={[Function]}
+          type="checkbox"
+          value="Drama"
+        />
+        <label
+          htmlFor="Drama"
+        >
+          Drama
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={10751}
+          onChange={[Function]}
+          type="checkbox"
+          value="Family"
+        />
+        <label
+          htmlFor="Family"
+        >
+          Family
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={14}
+          onChange={[Function]}
+          type="checkbox"
+          value="Fantasy"
+        />
+        <label
+          htmlFor="Fantasy"
+        >
+          Fantasy
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={36}
+          onChange={[Function]}
+          type="checkbox"
+          value="History"
+        />
+        <label
+          htmlFor="History"
+        >
+          History
+        </label>
+      </div>
+    </div>
+    <div
+      className="row w-100 flex-wrap justify-content-between"
+    >
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={36}
+          onChange={[Function]}
+          type="checkbox"
+          value="History"
+        />
+        <label
+          htmlFor="History"
+        >
+          History
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={27}
+          onChange={[Function]}
+          type="checkbox"
+          value="Horror"
+        />
+        <label
+          htmlFor="Horror"
+        >
+          Horror
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={10402}
+          onChange={[Function]}
+          type="checkbox"
+          value="Music"
+        />
+        <label
+          htmlFor="Music"
+        >
+          Music
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={9648}
+          onChange={[Function]}
+          type="checkbox"
+          value="Mystery"
+        />
+        <label
+          htmlFor="Mystery"
+        >
+          Mystery
+        </label>
+      </div>
+    </div>
+    <div
+      className="row w-100 flex-wrap justify-content-between"
+    >
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={9648}
+          onChange={[Function]}
+          type="checkbox"
+          value="Mystery"
+        />
+        <label
+          htmlFor="Mystery"
+        >
+          Mystery
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={10749}
+          onChange={[Function]}
+          type="checkbox"
+          value="Romance"
+        />
+        <label
+          htmlFor="Romance"
+        >
+          Romance
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={878}
+          onChange={[Function]}
+          type="checkbox"
+          value="Science Fiction"
+        />
+        <label
+          htmlFor="Science Fiction"
+        >
+          Science Fiction
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={10770}
+          onChange={[Function]}
+          type="checkbox"
+          value="TV Movie"
+        />
+        <label
+          htmlFor="TV Movie"
+        >
+          TV Movie
+        </label>
+      </div>
+    </div>
+    <div
+      className="row w-100 flex-wrap justify-content-between"
+    >
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={10770}
+          onChange={[Function]}
+          type="checkbox"
+          value="TV Movie"
+        />
+        <label
+          htmlFor="TV Movie"
+        >
+          TV Movie
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={53}
+          onChange={[Function]}
+          type="checkbox"
+          value="Thriller"
+        />
+        <label
+          htmlFor="Thriller"
+        >
+          Thriller
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={10752}
+          onChange={[Function]}
+          type="checkbox"
+          value="War"
+        />
+        <label
+          htmlFor="War"
+        >
+          War
+        </label>
+      </div>
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={37}
+          onChange={[Function]}
+          type="checkbox"
+          value="Western"
+        />
+        <label
+          htmlFor="Western"
+        >
+          Western
+        </label>
+      </div>
+    </div>
+    <div
+      className="row w-100 flex-wrap justify-content-between"
+    >
+      <div
+        className="each-filter col"
+      >
+        <input
+          defaultChecked={true}
+          id={37}
+          onChange={[Function]}
+          type="checkbox"
+          value="Western"
+        />
+        <label
+          htmlFor="Western"
+        >
+          Western
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</form>
+`;

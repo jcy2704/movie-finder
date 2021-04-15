@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React, { useState, useEffect } from 'react';
-import { withRouter } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import { connect } from 'react-redux';
@@ -12,15 +12,18 @@ import { currentMovie } from '../actions';
 import '../styles/movie/Movie.css';
 
 const Movie = ({
-  movie, match, history, addMovie,
+  movie, addMovie,
 }) => {
   const [loading, setLoading] = useState(true);
   const [videoURL, setVideoURL] = useState({
     key: '',
   });
 
+  const { id: paramsID } = useParams();
+  const history = useHistory();
+
   useEffect(async () => {
-    await axios.get(`${process.env.REACT_APP_DETAILS}/${match.params.id}?api_key=${process.env.REACT_APP_API_KEY}&append_to_response=videos`)
+    await axios.get(`${process.env.REACT_APP_DETAILS}/${paramsID}?api_key=${process.env.REACT_APP_API_KEY}&append_to_response=videos`)
       .then(response => {
         addMovie(response.data);
         const [vid] = response.data.videos.results.filter(obj => obj.site === 'YouTube' && obj.type === 'Trailer');
@@ -30,7 +33,7 @@ const Movie = ({
   }, []);
 
   if (loading) {
-    return <Loading nothing />;
+    return <Loading />;
   }
 
   const {
@@ -50,9 +53,7 @@ const Movie = ({
 };
 
 Movie.propTypes = {
-  match: PropTypes.oneOfType([PropTypes.object]).isRequired,
   movie: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
-  history: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
   addMovie: PropTypes.func.isRequired,
 };
 
@@ -62,4 +63,4 @@ const mapDipatchToProps = dispatch => ({
   addMovie: movie => dispatch(currentMovie(movie)),
 });
 
-export default connect(mapStateToProps, mapDipatchToProps)(withRouter(Movie));
+export default connect(mapStateToProps, mapDipatchToProps)(Movie);
