@@ -22,14 +22,14 @@
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
   font-family: "SF-Pro", sans-serif;
@@ -142,4 +142,3 @@ h1 {
 .catalogue-genres li button {
   color: #ebb52a;
 }
-/*# sourceMappingURL=Catalogue.css.map */
