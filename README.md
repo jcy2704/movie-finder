@@ -49,6 +49,8 @@
 - [✍️ Making Your Own Changes](#✍️-making-your-own-changes)
   - [Available Commands](#available-commands)
   - [Writing Code](#writing-code)
+  - [Creating env variables](#creating-your-own-env-variables)
+  - [Testing Code](#testing-code)
   - [Deploying Code](#deploying-code)
 - [👤 Author](#👤-author)
 - [🤝 Contributing](#🤝-contributing)
@@ -136,6 +138,7 @@ And there you are running the app.
 | `npm install` | Install project dependencies |
 | `npm start` | Build project and open web server running project |
 | `npm run build` | Builds code bundle with production settings (minification, uglification, etc..) |
+| `npm test`| Test the the created test cases |
 
 ### Writing Code
 
@@ -158,10 +161,40 @@ For example,
   REACT_APP_API_URL=https://api.example.com/
 ```
 
+### Testing Code
+
+To test your code, or changes, you need to create test cases for those. You can visit on the internet to learn how to create your test cases. After you create the cases, you can just run the test command on the terminal `npm test` and check if all test pass. If not then you need to fix your test cases or fix your code.
+
 ### Deploying Code
 
-After you run the `npm run build` command, your code will be built into a single bundle located at `dist/bundle.min.js` along with any other assets you project depended.
+This project is deployed to Heroku, but you can use Netlify or other platforms you like.
 
+For Heroku deployment we you can enter each of the following commands.
+
+```
+    heroku create your-app-name --buildpack mars/create-react-app
+
+    // you can remove 'your-app-name' if you don't know what name to put
+
+
+    git push heroku master
+
+    // if you are deploying the project from the master branch
+
+
+    git push heroku your-branch:master
+
+    // if you are deploying from a branch different from master
+
+
+    heroku open
+```
+
+After you deploy to Heroku, you need to go to the dashboard and create the environmental variables just like you did before in the `.env`, for Heroku.
+
+You can visit the following [link](https://devcenter.heroku.com/articles/config-vars#using-the-heroku-dashboard) to learn how to add it.
+
+And there you go! You have your app deployed to Heroku.
 
 ## 👤 Author
 
