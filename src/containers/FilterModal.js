@@ -29,6 +29,8 @@ const FilterModal = ({
     switcher();
   };
 
+  Modal.setAppElement('body');
+
   return (
     <div>
       <button type="button" data-testid="filter-btn" onClick={switcher}><FontAwesomeIcon icon={faFilter}>Filter</FontAwesomeIcon></button>

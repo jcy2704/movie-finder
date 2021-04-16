@@ -18,6 +18,9 @@ const Trending = ({
     key: '',
   });
 
+  const location = useLocation();
+  const { pathname } = location;
+
   useEffect(() => {
     topTrending(loader, setLoading, setVideoURL);
   }, [loader]);
@@ -29,9 +32,6 @@ const Trending = ({
   if (isLoading) {
     return <Loading />;
   }
-
-  const location = useLocation();
-  const { pathname } = location;
 
   return (
     <>
