@@ -1,70 +1,215 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="https://moviefinder.stevenchung.me">
+    <img width="140" src="./src/assets/icon.svg" alt="Logo">
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
 
-## Available Scripts
+  [**Movie Finder**](https://moviefinder.stevenchung.me)
 
-In the project directory, you can run:
+</h1>
 
-### `yarn start`
+<h3 align="center">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  **CATALOGUE OF MOVIES**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+</h3>
 
-### `yarn test`
+<p align="center">
+  <strong>Web App created by Steven Jack Chung</strong>
+  <br>
+  Project created using <a href="http://developers.themoviedb.org">TheMovieDB API</a> and <a href="https://reactjs.org">ReactJS</a> & <a href="http://redux.js.org">Redux</a>
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <a href="https://moviefinder.stevenchung.me">
+    <img src="https://img.shields.io/badge/OPEN%20Movie%20Finder-red?style=for-the-badge">
+  </a>
+</p>
 
-### `yarn build`
+<p align="center">
+  <a href="https://github.com/jcy2704/movie-finder/issues">
+    <img src="https://img.shields.io/badge/REPORT%20A%20BUG-royalblue?style=for-the-badge">
+  </a>
+   ‎ ‎ ‎ ‎
+  <a href="https://github.com/jcy2704/movie-finder/issues">
+    <img src="https://img.shields.io/badge/Request%20a%20feature-royalblue?style=for-the-badge">
+  </a>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Table of Contents
+- [🎬 About Movie Finder](#🎬-about-movie-finder)
+- [⚒️ Built With React & Redux](#⚒️-built-with-react-&-redux)
+- [🟢 Live Demo](#🟢-live-demo)
+- [🖥️ Setup](#🖥️-setup)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Run Movie Finder](#run-movie-finder)
+- [✍️ Making Your Own Changes](#✍️-making-your-own-changes)
+  - [Available Commands](#available-commands)
+  - [Writing Code](#writing-code)
+  - [Creating env variables](#creating-your-own-env-variables)
+  - [Testing Code](#testing-code)
+  - [Deploying Code](#deploying-code)
+- [👤 Author](#👤-author)
+- [🤝 Contributing](#🤝-contributing)
+- [⭐ Show your support](#⭐-show-your-support)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎬 About Movie Finder
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[**Movie Finder**](https://moviefinder.stevenchung.me) is a movies catalogue where you can find all the popular, top rated, and upcoming movies. You can browse and filter all the movie available as well as finding all basic information of each move in the listing. It was build with ReactJS & Redux and [The MovieDB](http://developers.themoviedb.org) was the API used to retrieve all information for the movies catalogue.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## ⚒️ Built With React & Redux
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**<img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React"> [ReactJS](https://reactjs.org)**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**<img height="15" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png" alt="Redux"> [Redux](http://redux.js.org)**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[Netlify](https://netlify.com)
 
-## Learn More
+Axios
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🟢 Live Demo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h3>
 
-### Code Splitting
+  [Movie Finder](https://moviefinder.stevenchung.me)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+</h3>
 
-### Analyzing the Bundle Size
+<a href="https://moviefinder.stevenchung.me">
+  <img width="1440" alt="image" src="https://user-images.githubusercontent.com/64392568/114433684-b71db600-9b87-11eb-9829-849c5d04baf0.png">
+</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🖥️ Setup
 
-### Making a Progressive Web App
+### Requirements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Internet Browser (Chrome, Firefox, Opera, etc)
 
-### Advanced Configuration
+[Git](https://git-scm.com/downloads) for version control.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[Node.js](https://nodejs.org) is required to install dependencies and run scripts via `npm`.
 
-### Deployment
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+After installing the tools required, go ahead and clone this repository by using [Git](https://git-scm.com/downloads) commands.
 
-### `yarn build` fails to minify
+```
+    git clone https://github.com/jcy2704/movie-finder.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Or you can also download this repository and access it with navigation commands.
+
+```
+    cd /path/to/repository/movie-finder
+```
+
+To be able to run the web app smoothly you need to install Node dependencies by typing the following command on your terminal
+
+```
+    npm install
+```
+
+Now you are good to go!
+
+### Run Movie Finder App
+
+Now that you've installed the repository correctly. Go ahead and test it out by running the following command on the terminal
+
+```
+    npm start
+```
+
+This command will open a `localhost:3000` server where it will be running the web app until you close the server by using the key combo `CTRL + C` on the terminal.
+
+And there you are running the app.
+
+**Enjoy!**
+
+## ✍️ Making Your Own Changes
+
+### Available Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm install` | Install project dependencies |
+| `npm start` | Build project and open web server running project |
+| `npm run build` | Builds code bundle with production settings (minification, uglification, etc..) |
+| `npm test`| Test the the created test cases |
+
+### Writing Code
+
+After cloning the repo, run `npm install` from your project directory. Then, you can start the local development server by running `npm start`.
+
+After starting the development server with `npm start`, you can edit any files in the `src` folder and webpack will automatically recompile and reload your server (available at `http://localhost:3000` by default).
+
+### Creating your own ENV variables
+
+To be able to create your own environmental variables you need to create a `.env` file in the root of the project.
+
+You need to also name the variable with the follow prefix `REACT_APP_`.
+
+For example,
+
+```
+  // .env
+
+  REACT_APP_API_KEY=1234567
+  REACT_APP_API_URL=https://api.example.com/
+```
+
+### Testing Code
+
+To test your code, or changes, you need to create test cases for those. You can visit on the internet to learn how to create your test cases. After you create the cases, you can just run the test command on the terminal `npm test` and check if all test pass. If not then you need to fix your test cases or fix your code.
+
+### Deploying Code
+
+This project is deployed to Heroku, but you can use Netlify or other platforms you like.
+
+For Heroku deployment we you can enter each of the following commands.
+
+```
+    heroku create your-app-name --buildpack mars/create-react-app
+
+    // you can remove 'your-app-name' if you don't know what name to put
+
+
+    git push heroku master
+
+    // if you are deploying the project from the master branch
+
+
+    git push heroku your-branch:master
+
+    // if you are deploying from a branch different from master
+
+
+    heroku open
+```
+
+After you deploy to Heroku, you need to go to the dashboard and create the environmental variables just like you did before in the `.env`, for Heroku.
+
+You can visit the following [link](https://devcenter.heroku.com/articles/config-vars#using-the-heroku-dashboard) to learn how to add it.
+
+And there you go! You have your app deployed to Heroku.
+
+## 👤 Author
+
+👤 **Steven Jack Chung**
+
+- GitHub: [@jcy2704](https://github.com/jcy2704)
+- Twitter: [@yiak_](https://twitter.com/yiak_)
+- LinkedIn: [Steven Jack Chung](https://linkedin.com/in/stevenjchung)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/jcy2704/movie-finder/issues).
+
+## ⭐ Show your support
+
+Give a ⭐️ if you like this project!

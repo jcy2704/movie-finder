@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'SF-Pro';
+  src: url("../../assets/fonts/SF-Pro-Text-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Pro';
+  src: url("../../assets/fonts/SF-Pro-Text-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Pro';
+  src: url("../../assets/fonts/SF-Pro-Text-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "SF-Pro", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+body {
+  background-color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.container {
+  padding: 0;
+}
+
+.col {
+  padding: 0;
+}
+
+.navigation-cont {
+  padding: 20px 30px 10px;
+  font-size: 1.1em;
+}
+
+.navigation-cont button {
+  margin: 0 10px;
+  font-size: 1.1em;
+}
+
+.navigation-cont button svg path {
+  color: #8e8e93;
+}
+
+.navigation {
+  color: #ebb52a;
+}
+
+.navigation a {
+  margin-right: 20px;
+}
