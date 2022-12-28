@@ -6,7 +6,7 @@
 
 <h1 align="center">
 
-  [**Movie Finder**](https://moviefinder.stevenchung.me)
+  [**Movie Finder**](https://frosty-fermi-aa55bd.netlify.app)
 
 </h1>
 
