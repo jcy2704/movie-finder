@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://moviefinder.stevenchung.me">
+  <a href="https://frosty-fermi-aa55bd.netlify.app">
     <img width="140" src="./src/assets/icon.svg" alt="Logo">
   </a>
 </p>
@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <a href="https://moviefinder.stevenchung.me">
+  <a href="https://frosty-fermi-aa55bd.netlify.app">
     <img src="https://img.shields.io/badge/OPEN%20Movie%20Finder-red?style=for-the-badge">
   </a>
 </p>
